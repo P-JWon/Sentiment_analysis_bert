@@ -1,15 +1,27 @@
 Bert-base-uncased
 
 1. 모델 설명
-
+마스킹 된 언어 모델링 (MLM) 목표를 사용하여 영어에 대한 사전 훈련 된 모델이며 12 - layer, 768 - hidden, 12 - head, 110M개의 매개 변수를 가지고 있습니다.
 
 2. 사용한 데이터
-
+amazon review(food 5rank data)
 
 3. 참고한 github 사이트 및 논문
-
+https://huggingface.co/bert-base-uncased
 
 4. 실행 과정
 
+Github의 코드를 돌리기 위해서는 데이터 타입 오류를 잡아야 합니다.
+
+#Feeding the input to BERT model to obtain contextualized representations
+        cont_reps=
+self.bert_layer(seq, attention_mask = attn_masks).last_hidden_state
+
+-> 위의 아웃풋이 레이어 이름을 변수로 가지고 있어서 마지막 레이어 값을 지정해주면 돌아갑니다.
+
 
 5. 실행 결과
+
+표기된 성능이 없어서 비교해보지 못했고 test 정확도 값이 일정하게 증가하지 않았지만
+
+82%의 성능을 보였다.
