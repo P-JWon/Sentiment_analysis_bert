@@ -1,16 +1,31 @@
 Bert-large(UDA)
 
 1. 모델 설명
-
+UDA는 Unsupervised Data Augmentation로서 준 지도학습 중 예측이 
+입력 값의 작은 변화에 민감하게 반응하지 않도록 강제하는 방법과 
+지도학습에서 사용되는 방법에 레이블이 존재하는 데이터에 변화를 줘 
+원본 데이터와 같은 레이블을 가지는 새로운 데이터를 만드는 방법, 
+이 두 방법을 결합한 것입니다.
+UDA는 supervised loss 과 unsupervised loss로 구성하며, supervised loss은 기존의 Cross-entropy loss이고 
+Unsupervised loss은 원본 예제 및 증강 예제 출력의 KL-divergence loss이며, 
+supervised loss과 unsupervised loss이 더해져 총 손실을 형성 한 다음 총 손실이 하강합니다.
 
 2. 사용한 데이터
-
+amazon review 
 
 3. 참고한 github 사이트 및 논문
-
+https://github.com/google-research/uda
+https://github.com/SanghunYun/UDA_pytorch
 
 4. 실행 과정
-
+Tensorflow를 기반한 UDA를 사용하려고 했었으나, 실행을 시도할 때마다 오류가 발생하였다. 
+조건 중, 실행환경이 python2과 tensorflow1 버전을 사용한 환경이어야 한다. 이 환경은 개인 pc로 환경이 갖춰질 수 있었으나 
+colab과 교내 서버 jupyter notebook에서는 갖춰줄 수가 없었다.
+그래서 개인 pc로 환경을 갖춰 실행을 시도해봤으나, 사양이 낮아 완벽히 구동이 어려워 제대로 실행하지 못하였다. 
+그래서 Pytorch를 기반한 UDA를 사용했으며, 이는 오류 없이 잘 실행이 되었다. 
+허나, 이 방법은 한 번 실행할 때 대량의 메모리를 잡아먹으며 대량의 데이터를 할 때에는 메모리 부족으로 인해 다양한 실험이 불가능하였다.
 
 5. 실행 결과
+
+표기된 성능인 97% 88%의 정확도 밖에 미치치 못했다.
 
