@@ -5,7 +5,7 @@ IMDB 데이터의 경우 벡터 데이터에 대해 내적 대신 cosine similar
 Naïve bayes weighted bag of n-gram vector를 조합하여 IMDB 데이터에 대한 최고 성능을 보여줬다.
 
 2. 사용한 데이터
-IMDB (영어로 된 영화 리뷰 데이터)
+IMDB
 
 3. 참고한 github 사이트 및 논문
 https://github.com/tanthongtan/dv-cosine 
