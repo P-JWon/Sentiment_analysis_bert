@@ -1,15 +1,17 @@
 Bert-base-multilingual
 
 1. 모델 설명
-
+마스킹 된 언어 모델링(MLM)을 사용하여 Wikipedia와 함께 상위 104개 언어에 대해 사전 훈련된 모델
 
 2. 사용한 데이터
-
+naver 영화 리뷰(NSMC)
 
 3. 참고한 github 사이트 및 논문
-
+https://mccormickml.com/2019/07/22/BERT-fine-tuning/ 
 
 4. 실행 과정
-
+colab으로 연동해서 gpu 가속기를 통해 실행 했다.
 
 5. 실행 결과
+
+별 다른 작업 없이 표기된 성능인 87%가 나왔다.
