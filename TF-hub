@@ -13,7 +13,7 @@ https://github.com/tensorflow/docs-l10n
 
 4. 실행 과정
 해당 코드를 colab과 연동해서 gpu 가속기를 통해 실행 했다.
-표기된 성능보다 2% 낮아서 batch size나 epoch조절을 해도 더 올라가지 않아서 
+기존 코드 그대로 실행 시 표기된 성능보다 2% 낮아서 batch size나 epoch조절을 해도 더 올라가지 않아서 
 차원의 크기가 더 큰 다른 모델들을 넣어서 돌려보았는데 오히려 성능이 떨어져서 
 layer를 추가해보고 optimizer 함수를 바꿔봐도 기존 85% 성능을 넘지 못하였다.
 
