@@ -1,0 +1,12 @@
+NB-cosine
+IMDB 데이터의 경우 벡터 데이터에 대해 내적 대신 cosine similarity 사용 시 정확도가 향상하는 점에서 
+Naïve bayes weighted bag of n-gram vector를 조합하여 IMDB 데이터에 대한 최고 성능을 보여줬다.
+
+https://github.com/tanthongtan/dv-cosine 
+-> 해당 github 코드 참고
+
+https://www.aclweb.org/anthology/P19-2057.pdf 
+-> 해당 코드 관련 논문
+
+코드 실행 방법
+파이참 3.7 version으로 필요한 라이브러리만 설치시 원활한 실행 가능
